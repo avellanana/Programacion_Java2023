@@ -1,0 +1,30 @@
+package pruebaUnit;
+
+import static org.junit.Assert.assertEquals;
+
+import org.junit.jupiter.api.Test;
+
+import libreria.Calculadora;
+
+public class TestUnit {
+	
+	@Test
+	void testSingleSucessTest() {
+		System.out.println("un test");
+	}
+	
+	@Test
+	void testSingleSucessTest2() {
+		System.out.println();
+	}
+	
+	void testShowSomething() {
+		System.out.println("otro test");
+		Calculadora c1=new Calculadora();
+		assertEquals(2,c1.suma(1, 1));
+		assertEquals(3,c1.suma(1, 1));
+		assertEquals(3,c1.suma(1, 1));
+		assertEquals(9,c1.suma(1, 1));
+	}
+
+}

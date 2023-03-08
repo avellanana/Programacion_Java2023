@@ -1,0 +1,23 @@
+package clase;
+
+public class Consumo {
+	
+	public int kms;
+	public int litros;
+	public int vmed;
+	public double precio;
+	
+	int getTiempo(int tiempo) {
+		return tiempo;
+	}
+	
+	int consumoMedio() {
+		return (litros/(kms/100));
+	}
+	
+	double consumoEuros() {
+		return ((litros/(kms/100))*precio);
+	}
+	
+
+}

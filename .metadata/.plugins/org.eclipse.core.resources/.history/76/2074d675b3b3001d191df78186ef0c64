@@ -1,0 +1,10 @@
+package testMaven;
+
+public class TestJavaUnit {
+	
+	@Test
+	void test1() {
+		
+	}
+
+}

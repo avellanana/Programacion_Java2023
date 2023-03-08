@@ -1,0 +1,12 @@
+package tema3_Calc;
+
+public class TestCalculadora {
+	
+	public static void main(String[] args) {
+		
+		Calculadora mycalculadora = new Calculadora();
+		int primeraSuma = mycalculadora.suma(1, 1);
+		
+	}
+
+}

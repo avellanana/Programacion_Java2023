@@ -1,0 +1,11 @@
+package ejercicioPrueba;
+
+public class Persona {
+			private boolean sexo;
+		
+	}
+
+
+public static void main(String[] args) {
+
+}

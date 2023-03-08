@@ -1,0 +1,22 @@
+/*
+	 * 1) Declara dos variables numéricas (con el valor que desees), muestra por
+	 * consola la suma, resta, multiplicación, división y módulo (resto de la
+	 * división).
+	 */
+
+public class Ejercicio1 {
+	
+	int variable1 = 3;
+	int variable2 = 8;
+	
+	public static int suma() {
+		int resultado = variable1 + variable2;
+		return resultado;
+	}
+	
+	public static void main (String[] args) {
+		System.out.println(suma());
+	}
+
+
+}

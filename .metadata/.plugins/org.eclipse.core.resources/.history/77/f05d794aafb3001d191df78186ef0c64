@@ -1,0 +1,15 @@
+package pruebaUnit;
+
+public class TestUnit {
+	
+	@Test
+	void testSingleSucessTest() {
+		System.out.println("un test");
+	}
+	
+	@Test
+	void testSingleSucessTeest2() {
+		System.out.println();
+	}
+
+}

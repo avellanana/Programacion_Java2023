@@ -1,0 +1,19 @@
+package clase;
+
+public class EjemploException {
+	
+	
+	public static void main(String[] args) {
+		
+	
+	try {
+		int a = 4/0;
+	} catch (Exception e) {
+		System.out.println("se ha producido una excepcion");
+	} finally {
+		System.out.println("Bloque finally");
+	}
+	
+	}
+
+}

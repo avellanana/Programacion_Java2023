@@ -1,0 +1,10 @@
+package clase;
+
+public class Consumo {
+	
+	int kms;
+	int litros;
+	int vmed;
+	int precio;
+
+}

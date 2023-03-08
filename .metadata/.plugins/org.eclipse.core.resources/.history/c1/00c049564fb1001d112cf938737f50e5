@@ -1,0 +1,36 @@
+package clase;
+
+public class Consumo {
+	
+	public int kms;
+	public int litros;
+	public int vmed;
+	public double precio;
+	
+	public Consumo(){
+		kms = 34;
+		litros = 20;
+		vmed = 80;
+		precio = 4.2;
+	}
+	
+	
+	
+	int getTiempo(int tiempo) {
+		return tiempo;
+	}
+	
+	int consumoMedio() {
+		return (litros/(kms/100));
+	}
+	
+	double consumoEuros() {
+		return ((litros/(kms/100))*precio);
+	}
+	
+	public static void main (String[]args) {
+		Consumo c1 = new Consumo();
+		System.out.println(c1.getTiempo(6));
+	}
+	
+}
