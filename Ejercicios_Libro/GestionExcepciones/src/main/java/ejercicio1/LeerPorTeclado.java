@@ -14,6 +14,7 @@ public class LeerPorTeclado {
 	public LeerPorTeclado() {
 		leerTeclado = new Scanner(System.in);
 		caracteres = "";
+		
 	}
 	
 	public String getChar() {
