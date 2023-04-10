@@ -16,11 +16,11 @@ import java.util.Objects;
 public class Persona {
 	
 	//atributos
-    private String nombre;
-    private String apellidos;
-    private String dni;
-    private int anyoNacimiento;
-    protected String apodo;
+    public String nombre;
+    public String apellidos;
+    public String dni;
+    public int anyoNacimiento;
+    private String apodo;
     
     //constructor parametros
     public Persona(String nombre, String apellidos, String dni, int anyoNacimiento, String apodo) {

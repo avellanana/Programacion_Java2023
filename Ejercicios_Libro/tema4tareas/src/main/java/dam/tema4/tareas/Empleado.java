@@ -62,6 +62,17 @@ public class Empleado {
 	}
     
     //equals
+   	@Override
+       public boolean equals(Object obj) {
+   		Empleado emp1 = (Empleado) obj;
+   		if (this.idEmpleado == emp1.idEmpleado && this.departamento == emp1.departamento) 
+   			if (persona != null) 
+   				return persona.equals(emp1.persona);
+   				
+   		return false;
+   	}
+   	
+   /*ERROR //equals
 	@Override
     public boolean equals(Object obj) {
 		Empleado emp1 = (Empleado) obj;
@@ -71,11 +82,12 @@ public class Empleado {
 			return false;
 		}
 	}
+	*/
 
     @Override
     public Empleado clone() throws CloneNotSupportedException {
-    	Empleado empleado1 = new Empleado(this.idEmpleado, this.departamento, this.persona);
-		return empleado1;
+    	Persona pc = (Persona) this.persona.clone();
+    	return new Empleado(this.idEmpleado, this.departamento, pc);
     }
 }
 
