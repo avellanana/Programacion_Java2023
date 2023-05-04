@@ -56,7 +56,7 @@ public class Persona {
 	@Override
     public
 	Object clone() throws CloneNotSupportedException {
-    	Persona personaClonada = new Persona(this.nombre, this.apellidos, this.edad);
+    	Persona personaClonada = new Persona(this.nombre, this.apellidos, this.edad); //aqui es lo mismo ponerle this o no, porque no hay parametro
     	return personaClonada;
 	}
 	
@@ -64,14 +64,23 @@ public class Persona {
 	//método equals
 	public boolean equals(Object obj) {
     	Persona p = (Persona) obj;
-    	if (this.nombre == p.nombre && this.apellidos == p.apellidos && this.edad == p.edad) 
-    	{
+    	
+    	if(this == p)
     		return true;
-    		}else {
-    			return false;
+    	else {
+    	if (this.nombre == p.nombre && this.apellidos == p.apellidos && this.edad == p.edad) 
+    		return true;
+    	return false;
     	}
     }
 	
+	/*
+	if (this == obj) //estamos viendo si apuntan a donde mismo
+		return true;
+	else
+		return false;
+		*/
+		
 	public static void main(String[] args) {
 		Persona p1 = new Persona("Lupe", "Ramirez", 20);
 		System.out.println(p1.toString());
