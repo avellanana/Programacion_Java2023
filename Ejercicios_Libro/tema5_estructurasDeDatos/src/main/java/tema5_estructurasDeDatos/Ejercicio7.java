@@ -3,15 +3,15 @@ package tema5_estructurasDeDatos;
 import java.util.Arrays;
 
 public class Ejercicio7 {
-	//Ejercicio 7: Crear la clase persona con nombre, DNI y edad, crear set/get y  metodo equals. 
-	//Crear un array de 10 elementos tipo Persona. Crear 10 personas y guardarlas en el array. 
-	//Iterar por el array para mostrar todas las personas. Crear un metodo que recibe un array de personas 
-	// y devuelve la primera persona con mayor edad
-		
-	Persona p1 = new Persona("Pepe", "1234567A", 12);
-	Persona p2 = new Persona("Romina", "1234567A", 13);
-	Persona p3 = new Persona("Luis", "1234567A", 14);
-	Persona p4 = new Persona("Maria", "1234567A", 15);
+//Ejercicio 7: Crear la clase persona con nombre, DNI y edad, crear set/get y  metodo equals. 
+//Crear un array de 10 elementos tipo Persona. Crear 10 personas y guardarlas en el array. 
+//Iterar por el array para mostrar todas las personas. Crear un metodo que recibe un array de personas 
+// y devuelve la primera persona con mayor edad
+	
+Persona p1 = new Persona("Pepe", "1234567A", 12);
+Persona p2 = new Persona("Romina", "1234567A", 13);
+Persona p3 = new Persona("Luis", "1234567A", 14);
+Persona p4 = new Persona("Maria", "1234567A", 15);
 	Persona p5 = new Persona("Ana", "1234567A", 16);
 	
 	Persona[] arrayPersonas = {p3,p2,p1,p4,p5};
