@@ -20,4 +20,31 @@ public class Electrodomestico {
 		this.consumoEnWatios = e.consumoEnWatios;
 	}
 
+	public String getMarca() {
+		return marca;
+	}
+
+	public void setMarca(String marca) {
+		this.marca = marca;
+	}
+
+	public String getModelo() {
+		return modelo;
+	}
+
+	public void setModelo(String modelo) {
+		this.modelo = modelo;
+	}
+
+	public int getConsumoEnWatios() {
+		return consumoEnWatios;
+	}
+
+	public void setConsumoEnWatios(int consumoEnWatios) {
+		this.consumoEnWatios = consumoEnWatios;
+	}
+	
+	
+	
+
 }
