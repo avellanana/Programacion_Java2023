@@ -43,8 +43,26 @@ public class Electrodomestico {
 	public void setConsumoEnWatios(int consumoEnWatios) {
 		this.consumoEnWatios = consumoEnWatios;
 	}
+
+	@Override
+	public String toString() {
+		return "Electrodomestico [marca=" + marca + ", modelo=" + modelo + ", consumoEnWatios=" + consumoEnWatios + "]";
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		Electrodomestico e1 = (Electrodomestico) obj;
+		if(this == e1)
+			return true;
+		else {
+			if(this.marca.equals(e1.marca) && this.modelo.equals(e1.modelo) && this.consumoEnWatios == e1.consumoEnWatios)
+				return true;
+			return false;
+		}
+	}
 	
-	
-	
+	public Object clone() throws CloneNotSupportedException {
+		return new Electrodomestico(this.marca, this.modelo, this.consumoEnWatios);
+	}
 
 }
